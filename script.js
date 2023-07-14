@@ -33,7 +33,7 @@ const lookup = {
 let A = "A".charCodeAt(0);
 let Z = "B".charCodeAt(0);
 function rot13(encodedStr) {
-  let decodedArr = ""; // Your Result goes here
+  let decodedArr = []; // Your Result goes here
    for(let i=0; i<encodedStr.length; i++){
 	   let currentChar = encodedStr[i].charCodeAt(0);
 	   if(currentChar>=A && currentChar<=Z){
