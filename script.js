@@ -35,7 +35,7 @@ function rot13(encodedStr) {
  let decodedStr=""
 	let A = "A".charCodeAt(0);
 	let Z = "Z".charCodeAt(0);
-	for(int i=0; i<encodedStr.length; i++){
+	for(let i=0; i<encodedStr.length; i++){
 		let curr = encodedStr[i].charCodeAt(0);
 		if(curr>=A && curr<=Z){
 			decodedStr+=lookup[encodedStr[i]]
